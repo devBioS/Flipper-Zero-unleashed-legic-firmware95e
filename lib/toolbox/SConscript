@@ -51,6 +51,15 @@ env.Append(
 
 libenv = env.Clone(tools=["fbt_version"], FW_LIB_NAME="toolbox")
 libenv.ApplyLibFlags()
+# Keep release f7 images below the C2 region without dropping features or API exports.
+if not env["DEBUG"] and env["FIRMWARE_BUILD_CFG"] == "firmware":
+    libenv.Append(CCFLAGS=["-flto"])
+    libenv.Replace(
+        AR="${TOOLCHAIN_PREFIX}gcc-ar",
+        RANLIB="${TOOLCHAIN_PREFIX}gcc-ranlib",
+        ARCOM="$AR $ARFLAGS $TARGET $SOURCES",
+    )
+
 
 
 # Git Version management

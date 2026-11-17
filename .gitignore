@@ -77,3 +77,7 @@ node_modules/
 # cli_perf script output in case of errors
 /block.bin
 /return_block.bin
+
+# Prebuilt release app packs staged by scripts/legic_prime/prepare_packs.py
+/applications/main/extra_resources/resources/apps/**/*.fap
+/applications/main/extra_resources/resources/apps_data/

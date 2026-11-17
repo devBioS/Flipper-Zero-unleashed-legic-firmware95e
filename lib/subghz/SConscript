@@ -33,6 +33,15 @@ env.Append(
 
 libenv = env.Clone(FW_LIB_NAME="subghz")
 libenv.ApplyLibFlags()
+# Release-only LTO retains every exported protocol while recovering f7 flash space.
+if not env["DEBUG"] and env["FIRMWARE_BUILD_CFG"] == "firmware":
+    libenv.Append(CCFLAGS=["-flto"])
+    libenv.Replace(
+        AR="${TOOLCHAIN_PREFIX}gcc-ar",
+        RANLIB="${TOOLCHAIN_PREFIX}gcc-ranlib",
+        ARCOM="$AR $ARFLAGS $TARGET $SOURCES",
+    )
+
 
 sources = libenv.GlobRecursive("*.c*")
 
