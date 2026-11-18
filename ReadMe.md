@@ -1,3 +1,17 @@
+# Unleashed 095e + LEGIC Prime
+
+[![LEGIC build](https://github.com/devBioS/Flipper-Zero-unleashed-legic-firmware95e/actions/workflows/legic-release.yml/badge.svg?branch=legic-prime-095e)](https://github.com/devBioS/Flipper-Zero-unleashed-legic-firmware95e/actions/workflows/legic-release.yml)
+
+This branch contains the tested LEGIC Prime port on Unleashed 095 with Base and
+Extra Apps. Download this fork's complete `.tgz` update package from
+[Releases](https://github.com/devBioS/Flipper-Zero-unleashed-legic-firmware95e/releases).
+The upstream release installers linked further below do not contain this port.
+
+See [LEGIC Prime build, validation and installation notes](LEGIC_PRIME.md).
+The original Unleashed README follows below.
+
+---
+
 <h3 align="center">
     <a href="https://github.com/DarkFlippers/unleashed-firmware">
         <img src="https://github.com/user-attachments/assets/466c40d5-f6a1-444d-a235-d9026f7cd0ff" align="center" alt="Unleashed Firmware Logo" border="0">  
