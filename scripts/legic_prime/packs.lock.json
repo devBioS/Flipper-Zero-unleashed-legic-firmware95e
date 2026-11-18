@@ -1,0 +1,12 @@
+{
+  "base": {
+    "name": "all-the-apps-base.tgz",
+    "url": "https://github.com/xMasterX/all-the-plugins/releases/download/11nov2026/all-the-apps-base.tgz",
+    "sha256": "d3f4eb0a0c1b76cbfbfa675ec920cc65d770279a1d7aa182c997ba19804f86e8"
+  },
+  "extra": {
+    "name": "all-the-apps-extra.tgz",
+    "url": "https://github.com/xMasterX/all-the-plugins/releases/download/11nov2026/all-the-apps-extra.tgz",
+    "sha256": "b140ec11aa179ce1f4f7403efc194a7e0f6f7969b51271fbdecd821b002a263c"
+  }
+}

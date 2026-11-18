@@ -81,3 +81,6 @@ node_modules/
 # Prebuilt release app packs staged by scripts/legic_prime/prepare_packs.py
 /applications/main/extra_resources/resources/apps/**/*.fap
 /applications/main/extra_resources/resources/apps_data/
+
+# Validated release output
+/release-artifacts/
